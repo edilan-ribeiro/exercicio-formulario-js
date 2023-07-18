@@ -53,10 +53,9 @@ body {
   height: 35px;
   padding: 10px;
   border: 1px solid #000;
-  
 }
 
-.page-container .form .formulario .form1:last-child {
+#mensagem {
   margin-bottom: 10px;
   height: 100px;
 }
@@ -69,23 +68,33 @@ body {
 
 .page-container .form .btn-enviar {
   align-self: center;
-  margin-top: 20px;
   background-color: #3ccc87;
   border-radius: 5px;
-  padding: 10px 45%;
-  color: #FFF;
+  padding: 10px 43%;
+  color: #fff;
   font-weight: 700;
+  margin-top: 20px;
+  cursor: pointer;
 }
 
+.page-container .form .formulario .texto-erro {
+  margin-top: -15px;
+  margin-bottom: 5px;
+  font-size: 8px;
+  color: #f52e2e;
+  display: block;
+}
 
-/* validação */
+/* validação de campos*/
 
 .page-container .form .formulario .faltou-prencher {
-    border: 1px solid #F52E2E;
+  border: 1px solid #f52e2e;
 }
 
+.page-container .form .formulario .tirar-erro {
+  display: none;
+}
 
-
-.page-container .form .formulario .preenchendo {
-    border: 1px solid #00C22B;
+.page-container .form .formulario .preenchido {
+  border: 1px solid #00c22b;
 }
