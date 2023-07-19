@@ -24,31 +24,31 @@
       <div class="form">
         <form class="formulario" action="">
           <ul>
-            <li>
+            <li class="item">
               <input type="text" name="form1" class="form1" id="form-nome" placeholder="Nome completo *" />
               <p class="texto-erro tirar-erro">campo obrigatório</p>
             </li>
 
-            <li>
+            <li class="item">
               <input type="email" name="form1" class="form1" id="form-email" placeholder="Email *" />
               <p class="texto-erro tirar-erro">campo obrigatório</p>
             </li>
 
-            <li>
-              <input type="tel" name="form1" class="form1" id="form-tel" placeholder="Telefone *" />
+            <li class="item">
+              <input type="tel" name="form1" class="form1" id="form-tel" placeholder="Telefone *" minlength="10" maxlength="15" pattern="[0-9]{1,}"/>
               <p class="texto-erro tirar-erro">campo obrigatório</p>
             </li>
 
-            <li>
+            <li class="item">
               <textarea name="form1" class="form1" id="mensagem" cols="30" rows="10" placeholder="Mensagem *"></textarea>
               <p class="texto-erro tirar-erro">campo obrigatório</p>
             </li>
 
-            <li>
+            <li >
               <p>*campos obrigatórios</p>
-              <a href="#">
-                <button class="btn-enviar">Enviar</button>
-              </a>
+             
+              <button class="btn-enviar" name="form1" id="btn-enviar" type="submit" >Enviar</button>
+            
             </li>
           </ul>
         </form>
