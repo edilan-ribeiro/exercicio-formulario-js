@@ -4,12 +4,12 @@ const botaoEnviar = document.getElementById("btn-enviar");
 botaoEnviar.addEventListener("click", function (event) {
 
 
-  itemsDoForm.forEach(function (itemSelecionado) {
+  itemsDoForm.forEach( (itemSelecionado) => {
     let valor = itemSelecionado.querySelector('.form1');
     let erroPreenchimento = itemSelecionado.querySelector('.texto-erro');
 
     
-      if (valor.value !== "") {
+      if (valor.value) {
         valor.classList.remove("faltou-prencher");
         valor.classList.add("preenchido");
 
@@ -28,5 +28,3 @@ botaoEnviar.addEventListener("click", function (event) {
    
   });
 });
-
-
